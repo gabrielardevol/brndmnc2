@@ -1,0 +1,84 @@
+.brndmnc-card {
+    display: flex;
+    padding: 0.6rem;
+    opacity: 1;
+    position: relative;
+}
+
+.brndmnc-card::after {
+    content: "";
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    position: absolute;
+    background-image: url("../../foto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    border-radius: 0.3rem;
+    opacity: 0.1;
+    z-index: -1
+}
+
+
+.brndmnc-card > div:first-child {
+    width: 9rem;
+}
+
+.brndmnc-card > div:first-child li{
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    font-size: smaller;
+}
+
+.card-pfp {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem 3rem 1rem 3rem;
+    margin: 0.6rem;
+    background-image: url("../../foto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    position: relative;
+    border: 3px solid green;
+    cursor: pointer;
+
+
+}
+
+.card-pfp:hover::before {
+    content: "ver influcard";
+    color: white;
+    font-size: small;
+    display: flex; align-items: center; justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    background: rgb(255, 165, 0, 0.7);
+    border-radius: 1rem 3rem 1rem 3rem;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    border: 3px solid green
+
+
+}
+
+.brndmnc-card li {
+    padding: 0.3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.brndmnc-card h4 {
+    padding: 0.3rem 0rem;
+    font-size: smaller;
+
+}

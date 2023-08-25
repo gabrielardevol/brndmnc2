@@ -1,0 +1,236 @@
+<style>
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+    margin: 0.3rem 0;
+    height: 2.3rem;
+}
+
+.form-section * {
+    font-size: smaller;
+}
+
+.form-section span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.form-section input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+
+.form-section label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    display: flex;
+    flex: 2;
+    border: 1px solid lavender;
+    border-radius: 3px;
+}
+
+
+.form-section :nth-child(2),
+.form-section input:nth-of-type(2) {
+    border-left: 1px solid lavender;
+}
+
+.form-section > :nth-child(2) > :first-child {
+    background: rgb(237, 237, 243);
+}
+
+.form-section > :nth-child(2) > * {
+    padding: 0.3em;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid lavender;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+
+
+}
+
+select, input {
+    border: 0 solid transparent;
+}
+
+
+</style>
+
+<div style="display: flex; flex-flow: column; width: 20vw; margin: auto; ">
+
+    <div class="form-section">
+        <label for="search">Buscar</label>
+        <div class="form-input">
+            <span>X</span>
+            <input type="text" name="search">
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-section">
+        <label for="tags">Tags</label>
+        <div class="form-input">
+            <select>X
+                <option value="=OR">=OR</option>
+                <option value="=AND">=AND</option>
+            </select>
+            <input type="text" name="tags" placeholder="palabra1 palabra2">
+        </div>
+    </div>
+
+    
+    <div class="form-section">
+        <label for="hashtags">#Hashtag</label>
+        <div class="form-input">
+            <select>X
+                <option value="=OR">=OR</option>
+                <option value="=AND">=AND</option>
+            </select>
+            <input type="text" name="hashtags" placeholder="loencuentro">
+        </div>
+    </div>
+
+    
+    <div class="form-section">
+        <label for="mencion">@Mencion</label>
+        <div class="form-input">
+            <select>X
+                <option value="=OR">=OR</option>
+                <option value="=AND">=AND</option>
+            </select>
+            <input type="text" name="mencion" placeholder="brandmanic">
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-section">
+        <label for="search">Ordenar</label>
+        <div class="form-input">
+            <select>
+                <option value="DESC">DESC</option>
+                <option value="ASC">ASC</option>
+            </select>
+            <select style="width: -webkit-fill-available">
+                <option value="default">Por defecto</option>
+                <option value="fedault">Dor perfecto</option>
+            </select>
+        </div>
+    </div>
+
+    <hr />
+
+    <div style=" border: 1px solid lavender">
+        <div style="width: -webkit-fill-available; border-bottom: 1px solid lavender; padding: 0.6rem">
+            <h5 style="margin: 0px; padding: 0px">Cuenta</h5>
+        </div>
+
+
+        <div class="form-section">
+            <label for="red">Red</label>
+            <div class="form-input">
+                <span>X</span>
+                <select style="width: -webkit-fill-available">X
+                    <option value="=OR">=OR</option>
+                    <option value="=AND">=AND</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="país">País</label>
+            <div class="form-input">
+                <span>X</span>
+                <select style="width: -webkit-fill-available">X
+                    <option value="=OR">=OR</option>
+                    <option value="=AND">=AND</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="género">Género</label>
+            <div class="form-input">
+                <span>X</span>
+                <select style="width: -webkit-fill-available">X
+                    <option value="=OR">=OR</option>
+                    <option value="=AND">=AND</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="age">Edad</label>
+            <div class="form-input" name="age">
+                <span>X</span>
+                <input type="text" name="min" placeholder="min">
+                <input type="text" name="max" placeholder="max">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="territorio">Territorio</label>
+            <div class="form-input">
+                <span>X</span>
+                <select style="width: -webkit-fill-available">X
+                    <option value="=OR">=OR</option>
+                    <option value="=AND">=AND</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="form-section">
+            <label for="age">Followers</label>
+            <div class="form-input" name="followers">
+                <span>X</span>
+                <input type="text" name="min" placeholder="min">
+                <input type="text" name="max" placeholder="max">
+            </div>
+        </div>
+    
+        <div class="form-section">
+            <label for="endagement">Engagement</label>
+            <div class="form-input" name="engagement">
+                <span>X</span>
+                <input type="text" name="min" placeholder="min">
+                <input type="text" name="max" placeholder="max">
+            </div>
+        </div>
+    
+        <div class="form-section">
+            <label for="engrate">Eng rate</label>
+            <div class="form-input" name="engagement">
+                <span>X</span>
+                <input type="text" name="min" placeholder="min">
+                <input type="text" name="max" placeholder="max">
+            </div>
+        </div>
+
+            
+        <div class="form-section">
+            <label for="impresions">Impresiones</label>
+            <div class="form-input" name="impresions">
+                <span>X</span>
+                <input type="text" name="min" placeholder="min">
+                <input type="text" name="max" placeholder="max">
+            </div>
+        </div>
+    </div>
+
+
+</div>

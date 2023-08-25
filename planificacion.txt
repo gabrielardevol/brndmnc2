@@ -1,0 +1,9 @@
+pendiente del dashboard:
+    hashtags de colores
+    toggle
+    banderita España
+    logo instagram
+
+loader
+
+influcard

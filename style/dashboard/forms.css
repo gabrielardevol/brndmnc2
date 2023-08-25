@@ -1,0 +1,83 @@
+
+#forms { /*dashboard column 1*/
+}
+#form-buttons {
+    display: flex
+}
+
+#forms button {
+    width: 50%; 
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+    margin: 0.3rem 0;
+    height: 2.3rem;
+}
+
+.form-section * {
+    font-size: smaller;
+}
+
+.form-section span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.form-section input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+
+.form-section label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    display: flex;
+    flex: 2;
+    border: 1px solid lavender;
+    border-radius: 3px;
+}
+
+
+.form-section :nth-child(2),
+.form-section input:nth-of-type(2) {
+    border-left: 1px solid lavender;
+}
+
+.form-section > :nth-child(2) > :first-child {
+    background: rgb(237, 237, 243);
+}
+
+.form-section > :nth-child(2) > * {
+    padding: 0.3em;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid lavender;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+
+
+}
+
+select, input {
+    border: 0 solid transparent;
+}

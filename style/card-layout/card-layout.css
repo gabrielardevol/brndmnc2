@@ -1,0 +1,36 @@
+#card-layout {
+    height: 100%; position: absolute; right: 0px; top: 0px; background: white; width: 0%; overflow: hidden;
+    transition: width 1s ease; 
+}
+
+#card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: pink;
+    min-height: 85px;
+}
+
+#card-layout main {
+    height: 85vh;
+}
+
+header {
+    height: 15vh
+}
+
+.column {
+    display: flex; flex-flow: column; gap: 0.6rem; padding-right: 0.6rem; padding-bottom: 0.6rem; 
+}
+
+main {
+    padding-left: 0.6rem; margin-bottom: 0.6rem;
+}
+
+#card-layout h2 {
+    font-size: medium;
+}
+
+#side-buttons button {
+    background: transparent; border: none; font-size: small; cursor:pointer
+}

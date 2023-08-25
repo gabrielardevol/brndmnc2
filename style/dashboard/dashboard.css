@@ -1,0 +1,48 @@
+h3 {
+    margin: 0px
+}
+
+nav {
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    background: white;
+    height: 7vh;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1)
+}
+
+nav > div {
+    border-right: 1px solid gainsboro;
+    background: white;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    padding: 0em 1em;
+    width: fit-content;
+    padding: 0px 1rem
+}
+
+#dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#cards { /*dashboard column 2*/
+}
+
+#cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.7rem;
+    padding: 0.7rem
+}
+
+.hashtag {
+    display: inline-block;
+    background: rgb(81, 55, 114);
+    color: white;
+    border-radius: 1rem; padding: 0.3rem 0.8rem;
+    margin: 0px;
+    font-size: smaller;
+}
