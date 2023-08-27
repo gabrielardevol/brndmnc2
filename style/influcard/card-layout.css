@@ -1,0 +1,115 @@
+#card-layout {
+    height: 100%; position:fixed; right: 0px; top: 0px; background: white; width: 0%; overflow: hidden;
+    transition: width 1s ease; 
+}
+
+#card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content
+}
+
+#card-layout main {
+    height: 85vh;
+}
+
+header {
+    height: fit-content;
+}
+
+.column {
+    display: flex; 
+    flex-flow: column; 
+    padding-right: 0.6rem; 
+    padding-bottom: 0.6rem; 
+}
+
+main {
+    padding-left: 0.6rem; 
+    margin-bottom: 0.6rem;
+}
+
+#card-layout h2 {
+    font-size: medium;
+}
+
+#side-buttons button {
+    background: transparent; 
+    border: none; 
+    font-size: small; 
+    cursor:pointer
+}
+
+.blue-logo {
+    height: 2.2rem; 
+    width: 2.2rem; 
+    background: rgb(113, 113, 226); 
+    border-radius: 50%; 
+    margin: 0rem 0.5rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.blue-logo i {
+    color: white;
+}
+
+#name {
+    font-size: large;
+
+}
+#username {
+    color:cornflowerblue
+}
+
+.flag {
+    width: 1rem;
+    max-height: 1rem;
+}
+
+.ic-loading-text {
+    display: none;
+}
+
+.ic-brands-container img {
+    max-width: 40px; 
+    max-height: 75px;
+}
+
+.col.ic-aud-cntent {
+    display: flex; 
+    flex-flow: column;
+    font-size: small; 
+}
+
+.col.ic-aud-cntent i {
+    font-size: xx-large;
+}
+
+.row.p-10.m-t-5.ic-border {
+    display: flex; 
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: grid!important; 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        display: grid!important; 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid!important; 
+        grid-template-columns: 1fr;
+    }
+}

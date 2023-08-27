@@ -1,0 +1,71 @@
+
+
+  
+  .text-link {
+    color: #68cfbc;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+  }
+  .text-link:hover {
+    opacity: 0.7;
+  }
+  
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  .chart {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;  }
+  
+  .h1 {
+    margin: 0 0 20px;
+  }
+  
+  .pie-chart {
+    position: relative;
+    font-size: 2em;
+    border-radius: 50%;
+  }
+  .pie-chart--donut:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+    content: "";
+  }
+  
+  .pie-chart__value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  
+  [data-chart="7"] .pie-chart {
+    width: 4rem;
+    height: 4rem;
+    background-color: #f2f2f2;
+  }
+  [data-chart="7"] .pie-chart--donut:after {
+    width: 3rem;
+    height: 3rem;
+  }
+  [data-chart="7"] .pie-chart__value {
+    font-size: 1rem;
+  }
+
+  .chart h5 {
+    font-size: 1rem;
+  }

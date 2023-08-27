@@ -1,0 +1,30 @@
+-errores de red en index.html (no permitía cargar bootstrap ni fontawesome)
+solucion: mover el proyecto de ubuntu a windows funcionó
+
+-html con muchas lineas
+solucion: indexar y colapsar los bloques que no usado
+
+-el form que hice en bootstrap parecia un frankenstein
+    así que lo escribí desde cero sin usar bootstrap 
+
+-los charts no coinciden al 100% con lo sgratuitos de amcharts.com
+solucion: he usado los que más se parecen, y alguno de codepen
+
+-hay algun icono de fontawesome que no es freemium, lo he dejado igual
+
+-el loader no se apreciaba porque cargaba muy rápido    
+solucion: le he dado un tiempo mínimo de 1segundo, para que se aprecie la animacion; desconozco si eso es una buena práctica o no
+
+-el chart de la franja horaria no estaba en la web de los charts
+solucion: hacerlo de cero
+
+-para el pdf:
+    he usado html2canvas y jsPDF, y he tenido unos cuantos problemas; funciona con bloques html sencillos, 
+    aunque no he logrado finalizarlo 
+
+-dummy: todo el dashboard, y la banderita española del influcard
+
+continuidad:
+    seguiria trabajando en el responsiveness
+    reduciria la paleta de colores
+
