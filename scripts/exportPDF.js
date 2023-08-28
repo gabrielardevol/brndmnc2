@@ -19,7 +19,7 @@ function exportToPdf() {
       console.log("pdf2")
 
       pdf.addImage(imgData, 'JPEG', rect.left, rect.top, rect.width, rect.height);
-      pdf.save('dashboard.pdf');
+      pdf.save('influcard.pdf');
     }
   );
 }
